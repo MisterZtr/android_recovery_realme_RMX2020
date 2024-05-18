@@ -1,14 +1,7 @@
-# mount point          device         fstype                            flags
-system                 /system        ext4                              flags=display="System";logical
-system_ext             /system_ext    ext4                              flags=display="System_ext";logical
-product                /product       ext4                              flags=display="Product";logical
-vendor                 /vendor        ext4                              flags=display="Vendor";logical
-odm                    /odm           ext4                              flags=display="ODM";logical
-
 # Images               fstype         device                            flags
-/system_image	       emmc	          /dev/block/mapper/system          flags=display="System Image";backup=1;flashimg=1
-/system_ext_image	   emmc	          /dev/block/mapper/system_ext      flags=display="System_Ext Image";backup=1;flashimg=1
-/product_image   	   emmc	          /dev/block/mapper/product         flags=display="Product Image";backup=1;flashimg=1
+/system_image	         emmc	          /dev/block/mapper/system          flags=display="System Image";backup=1;flashimg=1
+/system_ext_image	     emmc	          /dev/block/mapper/system_ext      flags=display="System_Ext Image";backup=1;flashimg=1
+/product_image   	     emmc	          /dev/block/mapper/product         flags=display="Product Image";backup=1;flashimg=1
 /vendor_image          emmc	          /dev/block/mapper/vendor          flags=display="Vendor Image";backup=1;flashimg=1
 /odm_image             emmc           /dev/block/mapper/odm             flags=display="ODM Image";backup=1;flashimg=1
 
