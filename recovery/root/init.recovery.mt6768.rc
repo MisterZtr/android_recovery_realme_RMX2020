@@ -58,7 +58,7 @@ service vendor.vibrator-default /vendor/bin/hw/android.hardware.vibrator-service
     group root system
     seclabel u:r:recovery:s0
 
-service kernelsu /system/bin/kernelsu.sh
+service modules_mount /system/bin/modules_mount.sh
     user root
     group root
     disabled
@@ -88,7 +88,7 @@ on property:twrp.decrypt.done=true
     stop mobicore
     stop keymaster-4-0
     stop gatekeeper-1-0
-    start kernelsu
+    start modules_mount
   
 on property:enable.fbe.service=0
     stop hal_cryptoeng_oppo
